@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        #main {
+            width: max-content;
+            margin: 48px auto 0 auto;
+            border: 1px solid blue;
+            padding: 48px 32px;
+            border-radius: 8px;
+        }
+
+        label {
+            display: inline-block;
+            min-width: 64px;
+            margin: 8px 0;
+        }
+
+        .gt {
+            margin: 0 16px;
+        }
+
+        .ts {
+            width: 75px;
+            margin-right: 16px;
+        }
+
+        .btn {
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .btn>button {
+            padding: 8px 16px;
+            border: none;
+            box-shadow: 0 0 10px 2px #ccc;
+            border-radius: 8px;
+        }
+
+        .btn>button:nth-child(1) {
+            margin-right: 32px;
+        }
+
+        .tsR1,
+        .tsR2 {
+            width: 26px;
+        }
+
+        .tsR1 {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <form action="pdb.php" method="post">
+            <h2 style="text-align: center;background-color: #f37531;color: #fff">Hello World!</h2><br>
+            <p>- Vui lòng nhập các thông tin sau</p>
+            <label for="">Họ và tên</label>
+            <input name="getName" class="ten" type="text"><br>
+            <label for="">Tuổi</label>
+            <input name="getAge" class="tuoi" type="number"><br>
+            <label for="">Giới tinh</label>
+            <span>Nam</span><input name="getSex" class="gt" type="radio" value="1">
+            <span style="margin-left: 32px;">Nữ</span><input name="getSex" class="gt" type="radio" value="0">
+            <br><br>
+            <p>- Nhập các thông số chẩn đoán</p>
+            <label class="nTs" for="">WBC</label>
+            <input name="" class="ts" type="number">
+            <label class="nTs" for="">RBC</label>
+            <input name="" class="ts" type="number"><br>
+            <label class="nTs" for="">HBG</label>
+            <input name="" class="ts" type="number">
+            <label class="nTs" for="">HCT</label>
+            <input name="" class="ts" type="number"><br>
+            <label class="nTs" for="">MCV</label>
+            <input name="" class="ts" type="number">
+            <label class="nTs" for="">MCH</label>
+            <input name="" class="ts" type="number"><br>
+            <label class="nTs" for="">MCHC</label>
+            <input name="" class="ts" type="number">
+            <label class="nTs" for="">PLT</label>
+            <input name="" class="ts" type="number"><br>
+            <label class="nTs" for="">LYM</label>
+            <input name="" class="ts" type="number">
+            <label class="nTs" for="">MXD</label>
+            <input name="" class="ts" type="number"><br>
+            <label class="nTs" for="">NEUT</label>
+            <input name="" class="ts" type="number">
+            <label class="nTs" for="">RDW</label>
+            <input name="" class="ts" type="number"><br>
+            <label class="nTs" for="">PDW</label>
+            <input name="" class="ts" type="number">
+            <label class="nTs" for="">MPW</label>
+            <input name="" class="ts" type="number"><br>
+            <label class="nTs" for="">PLCR</label>
+            <input name="" class="ts" type="number"><br>
+            <!-- <label for="">Nh-Máu(Rh)</label>
+        <span style="display: inline-block;transform: translateY(-15%)">+</span><input class="tsR1 ts" type="radio" name="rH">
+        <span style="display: inline-block;transform: translateY(-20%)">-</span><input class="tsR2 ts" type="radio" name="rH"> -->
+            <div class="btn">
+                <button class="gui">Gửi Đi</button>
+                <button class="huy">Hủy Bỏ</button>
+            </div>
+        </form>
+        <p id="test"></p>
+    </div>
+
+
+
+    <script src="./main.js">
+    </script>
+</body>
+
+</html>
